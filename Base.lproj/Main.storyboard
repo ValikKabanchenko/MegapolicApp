@@ -114,6 +114,9 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажимая &quot;Далее&quot;, я принимаю условия лицензионного соглашения, пользовательского соглашения и политику конфиденциальности" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCI-ez-Qgf">
                                 <rect key="frame" x="22" y="504.5" width="370" height="30.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -209,7 +212,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="yLf-ML-UBz">
                                 <rect key="frame" x="294" y="32" width="93" height="70"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lO3-hB-jyJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lO3-hB-jyJ">
                                 <rect key="frame" x="243" y="498" width="114" height="32"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Продолжить">
@@ -321,6 +324,7 @@
                             <constraint firstItem="DvV-am-o1s" firstAttribute="top" secondItem="ifC-IN-glx" secondAttribute="bottom" constant="139" id="Kzd-G5-37T"/>
                             <constraint firstItem="Zc4-zl-51M" firstAttribute="top" secondItem="uw0-AS-tff" secondAttribute="bottom" constant="44" id="QOH-Lq-LFs"/>
                             <constraint firstItem="il5-UX-Oa6" firstAttribute="leading" secondItem="aq9-tG-HZn" secondAttribute="leading" constant="35" id="Qvi-pt-mb5"/>
+                            <constraint firstItem="aq9-tG-HZn" firstAttribute="trailing" secondItem="DvV-am-o1s" secondAttribute="trailing" constant="57" id="UhB-wb-QyQ"/>
                             <constraint firstItem="ifC-IN-glx" firstAttribute="top" secondItem="uw0-AS-tff" secondAttribute="bottom" constant="44" id="VEY-U5-qZB"/>
                             <constraint firstItem="Zzf-vI-2c6" firstAttribute="leading" secondItem="Zc4-zl-51M" secondAttribute="trailing" constant="16" id="VbK-f0-ShP"/>
                             <constraint firstItem="28d-B5-wp7" firstAttribute="top" secondItem="uw0-AS-tff" secondAttribute="bottom" constant="44" id="cDX-fB-LMP"/>
@@ -329,7 +333,7 @@
                             <constraint firstItem="Zzf-vI-2c6" firstAttribute="top" secondItem="uw0-AS-tff" secondAttribute="bottom" constant="44" id="dsW-H9-bDl"/>
                             <constraint firstItem="28d-B5-wp7" firstAttribute="leading" secondItem="Zzf-vI-2c6" secondAttribute="trailing" constant="16" id="oJT-uy-D2R"/>
                             <constraint firstItem="uw0-AS-tff" firstAttribute="leading" secondItem="aq9-tG-HZn" secondAttribute="leading" constant="37" id="szJ-CE-AQ5"/>
-                            <constraint firstItem="DvV-am-o1s" firstAttribute="leading" secondItem="h6J-Rd-C6Y" secondAttribute="trailing" constant="30" id="tbI-Ov-htv"/>
+                            <constraint firstItem="DvV-am-o1s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h6J-Rd-C6Y" secondAttribute="trailing" constant="8" symbolic="YES" id="tbI-Ov-htv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ups-Bd-SLU"/>
@@ -367,13 +371,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="клавиатура" translatesAutoresizingMaskIntoConstraints="NO" id="rHu-Yd-P7S">
                                 <rect key="frame" x="53" y="368" width="307" height="384"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2N-XD-fTt">
-                                <rect key="frame" x="255" y="329" width="114" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2N-XD-fTt">
+                                <rect key="frame" x="235" y="328" width="124" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="5KS-dZ-6W0"/>
+                                    <constraint firstAttribute="height" constant="32" id="J2M-sZ-2RB"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Продолжить" backgroundImage="Rectangle 2"/>
+                                <state key="normal" title="Продолжить"/>
                                 <connections>
                                     <segue destination="Kbi-Pv-zu4" kind="show" id="9KL-Jk-eF1"/>
                                 </connections>
@@ -384,19 +389,19 @@
                         <constraints>
                             <constraint firstItem="bPD-Vt-blv" firstAttribute="top" secondItem="Shv-Bg-AlD" secondAttribute="bottom" constant="34" id="5Lj-gX-eSd"/>
                             <constraint firstItem="AlT-JP-4kF" firstAttribute="trailing" secondItem="Shv-Bg-AlD" secondAttribute="trailing" constant="112" id="6ht-sk-vKS"/>
-                            <constraint firstItem="X2N-XD-fTt" firstAttribute="leading" secondItem="AlT-JP-4kF" secondAttribute="leading" constant="255" id="735-Id-Rsb"/>
                             <constraint firstItem="bPD-Vt-blv" firstAttribute="leading" secondItem="YzG-hy-bLK" secondAttribute="trailing" constant="24" id="7bW-Z4-vPX"/>
                             <constraint firstItem="YzG-hy-bLK" firstAttribute="top" secondItem="Shv-Bg-AlD" secondAttribute="bottom" constant="34" id="BOB-6M-eKT"/>
+                            <constraint firstItem="rHu-Yd-P7S" firstAttribute="top" secondItem="X2N-XD-fTt" secondAttribute="bottom" constant="8" symbolic="YES" id="Bdp-Wb-vRC"/>
                             <constraint firstItem="YzG-hy-bLK" firstAttribute="leading" secondItem="JKv-UL-gLa" secondAttribute="trailing" constant="24" id="CNp-QA-WCY"/>
                             <constraint firstItem="Shv-Bg-AlD" firstAttribute="top" secondItem="AlT-JP-4kF" secondAttribute="top" constant="113" id="LoL-fD-mDB"/>
                             <constraint firstItem="Shv-Bg-AlD" firstAttribute="leading" secondItem="AlT-JP-4kF" secondAttribute="leading" constant="112" id="MrN-WS-QVl"/>
                             <constraint firstItem="rHu-Yd-P7S" firstAttribute="top" secondItem="JKv-UL-gLa" secondAttribute="bottom" constant="100" id="Oto-CX-5Ub"/>
                             <constraint firstItem="rHu-Yd-P7S" firstAttribute="leading" secondItem="AlT-JP-4kF" secondAttribute="leading" constant="53" id="PWY-wl-kun"/>
-                            <constraint firstItem="AlT-JP-4kF" firstAttribute="trailing" secondItem="X2N-XD-fTt" secondAttribute="trailing" constant="45" id="RPB-bQ-mFI"/>
                             <constraint firstItem="Lzr-Ow-G6L" firstAttribute="leading" secondItem="bPD-Vt-blv" secondAttribute="trailing" constant="24" id="Wed-z9-vUw"/>
+                            <constraint firstItem="AlT-JP-4kF" firstAttribute="trailing" secondItem="X2N-XD-fTt" secondAttribute="trailing" constant="55" id="X1T-57-xEx"/>
                             <constraint firstItem="Lzr-Ow-G6L" firstAttribute="top" secondItem="Shv-Bg-AlD" secondAttribute="bottom" constant="34" id="bad-nC-8Q6"/>
                             <constraint firstItem="JKv-UL-gLa" firstAttribute="top" secondItem="Shv-Bg-AlD" secondAttribute="bottom" constant="34" id="fzb-vD-BYm"/>
-                            <constraint firstItem="rHu-Yd-P7S" firstAttribute="top" secondItem="X2N-XD-fTt" secondAttribute="bottom" constant="7" id="mT7-uW-7Kj"/>
+                            <constraint firstItem="X2N-XD-fTt" firstAttribute="leading" secondItem="AlT-JP-4kF" secondAttribute="leading" constant="235" id="oiY-gG-rAw"/>
                             <constraint firstItem="JKv-UL-gLa" firstAttribute="leading" secondItem="AlT-JP-4kF" secondAttribute="leading" constant="127" id="ox2-xg-Bcl"/>
                             <constraint firstItem="AlT-JP-4kF" firstAttribute="trailing" secondItem="rHu-Yd-P7S" secondAttribute="trailing" constant="54" id="xvP-FF-szK"/>
                         </constraints>
@@ -417,6 +422,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQu-FQ-OoV">
                                 <rect key="frame" x="15" y="156" width="384" height="691"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
+                                </accessibility>
                                 <mutableString key="text">Lorem ipsum dolor sit amet. Qui aliquid doloremque ab earum fugiat eum magni ipsam est odio corporis. Et sequi vero ut blanditiis ipsum et minus voluptas qui eaque deleniti eum mollitia dolorem quo natus enim est similique sunt. Id accusamus consectetur vel debitis veniam non galisum dolorem eos enim itaque quo voluptatem autem.
 
 A molestiae aperiam aut culpa voluptas et vitae doloremque ut molestiae praesentium 33 ullam alias id perspiciatis neque. Et quis maxime eos quisquam molestiae et sint molestiae in tempora dolor. Est galisum sequi sed voluptatem consequuntur sit nisi iusto ab galisum cumque a placeat accusamus hic voluptatem dolores est voluptatibus sequi. Qui provident internos non possimus voluptatem ut asperiores obcaecati.
@@ -485,6 +493,9 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажимая &quot;Далее&quot;, я принимаю условия лицензионного соглашения, пользовательского соглашения и политику конфиденциальности" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-RU-VNg">
                                 <rect key="frame" x="22" y="504.5" width="370" height="30.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
