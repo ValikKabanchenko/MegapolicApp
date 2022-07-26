@@ -12,6 +12,9 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var numberLabel: UITextField!
     
     @IBOutlet weak var errorLabel: UILabel!
+  
+    
+// Тут идёт проверка есть ли в TextField такие номера
     
 var number : [String] = ["79508754377", "79851238767", "79508754389", "79851238790"]
 func updateLabel() {
@@ -21,14 +24,12 @@ func updateLabel() {
     } else {
         errorLabel.text = "Phone is False"
     }
-    
-    
-   
 }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        numberLabel.text! = " "
+        
         updateLabel()
     }
 
