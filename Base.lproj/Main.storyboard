@@ -903,10 +903,10 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
             </objects>
             <point key="canvasLocation" x="3225" y="708"/>
         </scene>
-        <!--Confirm FaceID View Controller-->
+        <!--ConfirmID View Controller-->
         <scene sceneID="MRl-Xq-yXw">
             <objects>
-                <viewController id="nbN-zD-CZa" customClass="ConfirmFaceIDViewController" customModule="MegapolicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nbN-zD-CZa" customClass="ConfirmIDViewController" customModule="MegapolicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IfU-u4-1Rj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -961,10 +961,10 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
             </objects>
             <point key="canvasLocation" x="5835" y="-228"/>
         </scene>
-        <!--Confirm TouchID View Controller-->
+        <!--ConfirmID View Controller-->
         <scene sceneID="pWY-oF-d1M">
             <objects>
-                <viewController id="T0U-B6-OWj" customClass="ConfirmTouchIDViewController" customModule="MegapolicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T0U-B6-OWj" customClass="ConfirmIDViewController" customModule="MegapolicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rI4-uh-hsx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

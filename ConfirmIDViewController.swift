@@ -1,13 +1,13 @@
 //
-//  ConfirmFaceIDViewController.swift
+//  ConfirmIDViewController.swift
 //  MegapolicApp
 //
-//  Created by Валик Кабанченко on 25.07.2022.
+//  Created by Валик Кабанченко on 26.07.2022.
 //
 
 import UIKit
 
-class ConfirmFaceIDViewController: UIViewController {
+class ConfirmIDViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
