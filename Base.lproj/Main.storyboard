@@ -143,6 +143,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw4-Vi-1Vx">
+                                <rect key="frame" x="15" y="500" width="218" height="18"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="dcA-io-q2v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Нажимая &quot;Далее&quot;, я принимаю условия"/>
+                                <connections>
+                                    <segue destination="YYb-9z-xhv" kind="show" id="1pb-ui-khJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jlF-uz-JKV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -151,14 +164,17 @@
                             <constraint firstItem="tCI-ez-Qgf" firstAttribute="leading" secondItem="jlF-uz-JKV" secondAttribute="leading" constant="22" id="1pe-dD-QfV"/>
                             <constraint firstAttribute="trailing" secondItem="tCI-ez-Qgf" secondAttribute="trailing" constant="22" id="54G-lI-Bb5"/>
                             <constraint firstItem="jlF-uz-JKV" firstAttribute="trailing" secondItem="vEb-bd-Eyl" secondAttribute="trailing" constant="27" id="85M-CB-dT8"/>
+                            <constraint firstItem="aw4-Vi-1Vx" firstAttribute="top" secondItem="u4g-qg-340" secondAttribute="bottom" constant="16.5" id="B1N-qo-ltz"/>
                             <constraint firstItem="6xb-1b-wD0" firstAttribute="top" secondItem="jpY-QT-chj" secondAttribute="bottom" constant="99.5" id="Bly-Ws-Wai"/>
                             <constraint firstItem="SRF-iz-Dng" firstAttribute="leading" secondItem="jlF-uz-JKV" secondAttribute="leading" constant="36" id="Cgs-fb-HKZ"/>
                             <constraint firstItem="6xb-1b-wD0" firstAttribute="centerY" secondItem="SRF-iz-Dng" secondAttribute="centerY" id="HJd-lg-Q9h"/>
+                            <constraint firstItem="jlF-uz-JKV" firstAttribute="trailing" secondItem="aw4-Vi-1Vx" secondAttribute="trailing" constant="181" id="I3Z-Sh-CfO"/>
                             <constraint firstItem="u4g-qg-340" firstAttribute="leading" secondItem="jlF-uz-JKV" secondAttribute="leading" constant="24" id="JJ8-XM-9Kf"/>
                             <constraint firstItem="u4g-qg-340" firstAttribute="top" secondItem="mMa-E0-PcJ" secondAttribute="bottom" constant="8.5" id="KXn-uT-aK0"/>
                             <constraint firstItem="jpY-QT-chj" firstAttribute="top" secondItem="aVX-Bz-mlt" secondAttribute="bottom" constant="22" id="Led-AV-jam"/>
                             <constraint firstItem="mMa-E0-PcJ" firstAttribute="trailing" secondItem="6xb-1b-wD0" secondAttribute="trailing" id="SBc-8x-7ND"/>
                             <constraint firstItem="vEb-bd-Eyl" firstAttribute="top" secondItem="MW4-no-bc0" secondAttribute="top" constant="32" id="aHR-b0-s8n"/>
+                            <constraint firstItem="aw4-Vi-1Vx" firstAttribute="leading" secondItem="jlF-uz-JKV" secondAttribute="leading" constant="15" id="bRY-ob-hRd"/>
                             <constraint firstItem="u4g-qg-340" firstAttribute="top" secondItem="6xb-1b-wD0" secondAttribute="bottom" constant="62.5" id="bXX-et-98L"/>
                             <constraint firstItem="aVX-Bz-mlt" firstAttribute="top" secondItem="jlF-uz-JKV" secondAttribute="top" constant="66" id="dqf-7N-bC2"/>
                             <constraint firstItem="jlF-uz-JKV" firstAttribute="trailing" secondItem="u4g-qg-340" secondAttribute="trailing" constant="24" id="hrI-AM-Ewv"/>
@@ -380,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6QQ-4p-boI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2051" y="708"/>
+            <point key="canvasLocation" x="2051" y="1021"/>
         </scene>
         <!--Set Cod View Controller-->
         <scene sceneID="bA0-hS-OvD">
@@ -462,7 +478,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQu-FQ-OoV">
-                                <rect key="frame" x="15" y="156" width="384" height="691"/>
+                                <rect key="frame" x="15" y="200" width="384" height="647"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" link="YES" staticText="YES"/>
                                 </accessibility>
@@ -485,10 +501,11 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                             <constraint firstItem="TQu-FQ-OoV" firstAttribute="top" secondItem="MEU-xd-e0p" secondAttribute="top" constant="112" id="dx2-gK-RZ3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IN1-EQ-X6D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmU-ck-tHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="922"/>
+            <point key="canvasLocation" x="1196" y="529"/>
         </scene>
         <!--Input View Controller-->
         <scene sceneID="shO-rJ-uQy">
@@ -552,6 +569,19 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                                     <segue destination="Z81-Tj-ILo" kind="show" id="RwT-8L-8lf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VP-Pj-SMC">
+                                <rect key="frame" x="16" y="501" width="218" height="18"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="SdV-zx-wMN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Нажимая &quot;Далее&quot;, я принимаю условия"/>
+                                <connections>
+                                    <segue destination="YYb-9z-xhv" kind="show" id="lDT-4n-gfa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QOW-pV-6kX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -560,6 +590,7 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                             <constraint firstItem="Lul-bk-Q00" firstAttribute="top" secondItem="Gxm-9x-K9A" secondAttribute="bottom" constant="107" id="6WT-1F-g0d"/>
                             <constraint firstItem="iJI-Yd-RQV" firstAttribute="top" secondItem="Gxm-9x-K9A" secondAttribute="bottom" constant="89" id="9N7-8L-lox"/>
                             <constraint firstItem="Gxm-9x-K9A" firstAttribute="leading" secondItem="QOW-pV-6kX" secondAttribute="leading" constant="37" id="ITH-18-wkz"/>
+                            <constraint firstItem="0VP-Pj-SMC" firstAttribute="leading" secondItem="h5F-RU-VNg" secondAttribute="leading" constant="-6" id="Qfq-0W-vdS"/>
                             <constraint firstAttribute="trailing" secondItem="Lul-bk-Q00" secondAttribute="trailing" constant="60" id="VHh-zD-P3F"/>
                             <constraint firstAttribute="trailing" secondItem="h5F-RU-VNg" secondAttribute="trailing" constant="22" id="Vh5-jc-gnq"/>
                             <constraint firstItem="Gxm-9x-K9A" firstAttribute="top" secondItem="oXm-jh-4eA" secondAttribute="bottom" constant="22" id="WH1-U6-IGP"/>
@@ -567,6 +598,8 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                             <constraint firstItem="gv6-Gq-4NM" firstAttribute="top" secondItem="iJI-Yd-RQV" secondAttribute="bottom" constant="51" id="aFA-iD-8hS"/>
                             <constraint firstItem="w8R-bT-k1h" firstAttribute="leading" secondItem="QOW-pV-6kX" secondAttribute="leading" constant="22" id="aJo-gP-GiA"/>
                             <constraint firstItem="Lul-bk-Q00" firstAttribute="leading" secondItem="QOW-pV-6kX" secondAttribute="leading" constant="60" id="aqS-dI-Pu2"/>
+                            <constraint firstItem="QOW-pV-6kX" firstAttribute="trailing" secondItem="0VP-Pj-SMC" secondAttribute="trailing" constant="180" id="d0X-79-dBv"/>
+                            <constraint firstItem="0VP-Pj-SMC" firstAttribute="top" secondItem="gv6-Gq-4NM" secondAttribute="bottom" constant="17.5" id="dUD-0g-5I6"/>
                             <constraint firstItem="QOW-pV-6kX" firstAttribute="trailing" secondItem="Gxm-9x-K9A" secondAttribute="trailing" constant="37" id="e8F-NB-aGe"/>
                             <constraint firstItem="w8R-bT-k1h" firstAttribute="top" secondItem="iJI-Yd-RQV" secondAttribute="bottom" constant="7.5" id="f2M-48-cn0"/>
                             <constraint firstItem="QOW-pV-6kX" firstAttribute="trailing" secondItem="gv6-Gq-4NM" secondAttribute="trailing" constant="24" id="fep-Y6-NiH"/>
@@ -575,6 +608,7 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                             <constraint firstItem="oXm-jh-4eA" firstAttribute="top" secondItem="QOW-pV-6kX" secondAttribute="top" constant="66" id="kDd-IZ-e7Y"/>
                             <constraint firstItem="h5F-RU-VNg" firstAttribute="top" secondItem="gv6-Gq-4NM" secondAttribute="bottom" constant="21" id="lYS-sa-yZs"/>
                             <constraint firstItem="0ja-1P-by8" firstAttribute="top" secondItem="LSB-TT-vXG" secondAttribute="top" constant="32" id="m6a-21-Vmm"/>
+                            <constraint firstItem="0VP-Pj-SMC" firstAttribute="firstBaseline" secondItem="h5F-RU-VNg" secondAttribute="firstBaseline" id="mXl-7b-FXV"/>
                             <constraint firstItem="h5F-RU-VNg" firstAttribute="leading" secondItem="QOW-pV-6kX" secondAttribute="leading" constant="22" id="nO8-Cp-jbz"/>
                             <constraint firstItem="QOW-pV-6kX" firstAttribute="trailing" secondItem="iJI-Yd-RQV" secondAttribute="trailing" constant="36" id="o9Z-MZ-JaZ"/>
                             <constraint firstItem="gv6-Gq-4NM" firstAttribute="leading" secondItem="QOW-pV-6kX" secondAttribute="leading" constant="24" id="ouk-IT-0Vi"/>
@@ -586,7 +620,7 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWe-FV-k91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="708"/>
+            <point key="canvasLocation" x="19" y="1021"/>
         </scene>
         <!--Forgot The Cod View Controller-->
         <scene sceneID="YWV-K4-dcq">
@@ -676,7 +710,7 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kE-vs-ISw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="1467"/>
+            <point key="canvasLocation" x="19" y="2022"/>
         </scene>
         <!--Forgot The Cod Confirm View Controller-->
         <scene sceneID="Kbh-Ux-UYV">
@@ -752,7 +786,7 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hx2-xu-CNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2051" y="1467"/>
+            <point key="canvasLocation" x="874" y="2022"/>
         </scene>
         <!--Set Cod Repeat Cod View Controller-->
         <scene sceneID="yJb-IZ-rEQ">
@@ -907,7 +941,7 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fde-N1-5P9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3225" y="708"/>
+            <point key="canvasLocation" x="3314" y="1021"/>
         </scene>
         <!--ConfirmID View Controller-->
         <scene sceneID="MRl-Xq-yXw">
@@ -1023,6 +1057,9 @@ Aut maiores omnis aut natus voluptate quo praesentium nihil id porro porro. At o
             <point key="canvasLocation" x="7506" y="-228"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lDT-4n-gfa"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="1296757644064" width="282" height="61"/>
         <image name="Button" width="281" height="56"/>
