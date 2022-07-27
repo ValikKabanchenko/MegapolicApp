@@ -8,22 +8,27 @@
 import UIKit
 
 class ForgotTheCodViewController: UIViewController {
+    @IBOutlet weak var numberLabel: UITextField!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    var number : [String] = ["79508754377", "79851238767", "79508754389", "79851238790"]
+    
+    func updateLabel() {
 
+        if number.contains(numberLabel.text!) {
+            errorLabel.text = "Phone is True"
+        } else {
+            errorLabel.text = "Phone is False"
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateLabel()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }
