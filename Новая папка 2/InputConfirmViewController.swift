@@ -8,6 +8,7 @@
 import UIKit
 
 class InputConfirmViewController: UIViewController {
+<<<<<<< HEAD:Новая папка 2/InputConfirmViewController.swift
     @IBOutlet weak var firstIconConfirm: UITextField!
    
     @IBOutlet weak var secondIconConfirm: UITextField!
@@ -43,13 +44,24 @@ class InputConfirmViewController: UIViewController {
         let randomIndex = Int(arc4random_uniform(UInt32(randomNumber.count)))
         fourthIconConfirm.text! = String(randomIndex)
     }
+=======
+
+>>>>>>> parent of 7dd28da (Функционал):InputConfirmViewController.swift
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateAllIcon ()
+
         // Do any additional setup after loading the view.
     }
     
 
-   
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }

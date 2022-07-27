@@ -6,36 +6,24 @@
 //
 
 import UIKit
-import LocalAuthentication
 
 class ConfirmIDViewController: UIViewController {
-    @IBOutlet weak var errorLabelId: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        indetifyYourself()
+        // Do any additional setup after loading the view.
     }
     
-    private func indetifyYourself() {
-        let context = LAContext()
-        var error: NSError?
 
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+    /*
+    // MARK: - Navigation
 
-            let reason = "Идентифицируйте себя"
-            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason ) { success, error in
-
-                if success {
-                    DispatchQueue.main.async { [unowned self] in
-                        print("Успешная авторизация")
-                    }
-                }
-            }
-
-        } else {
-            print("Face/Touch ID не найден")
-        }
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    
+    */
+
 }
