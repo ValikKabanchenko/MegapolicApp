@@ -24,7 +24,8 @@ class InputConfirmViewController: UIViewController {
         updateThirdIconConfirm ()
         updateFourthIconConfirm ()
     }
-       
+        
+    
     func updateFirstIconConfirm () {
         
         let randomIndex = Int(arc4random_uniform(UInt32(randomNumber.count)))
