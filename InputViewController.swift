@@ -24,7 +24,7 @@ class InputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLabel()
-         
+       
     }
     
 
